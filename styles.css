@@ -1,3 +1,12 @@
-h1{
-    color: brown;
+#viewport{
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    grid-template-rows: 1fr 4fr;
+    height: 100vh;
+    width: 100%;
+}
+
+nav{
+    grid-row-start: 1;
+    grid-row-end: -1    ;
 }
