@@ -115,6 +115,45 @@ header{
 
 /* Username and greetings section */
 
+#lower-header{
+    display: grid;
+    grid-template: 1fr / 0.1fr 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    padding-left: 20px;
+    margin-top: 15px;
+    gap: 10px;
+}
 
+#greetings-section{
+    justify-self: start;
+}
 
+#lower-header .circle-container{
+    width: 50px;
+    height: 50px;
+    justify-self: start;
+}
 
+/* Button section */
+
+#buttons-section{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    padding: 0.7rem;
+    gap: 5%;
+}
+
+#buttons-section button{
+    width: 20%;
+    height: 80%;
+    border: none;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    color: #aba2a2;
+    font-size: 0.9rem;
+    font-weight: 400;
+    cursor: pointer;
+}
