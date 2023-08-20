@@ -3,7 +3,7 @@
 
 #viewport{
     display: grid;
-    grid-template-columns: 1fr 3.5fr;
+    grid-template-columns: 0.8fr 5fr;
     grid-template-rows: 1fr 4fr;
     height: 100vh;
     width: 100%;
@@ -14,6 +14,13 @@ nav{
     grid-row-start: 1;
     grid-row-end: -1;
     background-color: #f5f5f5;
+}
+
+/* SVG card */
+
+.svg-card{
+    margin-top: 10px;
+    width: 17vw;
 }
 
 /* Navegation side bar  */
@@ -169,6 +176,7 @@ header{
 /* Projects area */
 
 #projects-container{
+    position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 0.5fr));
     gap: 2vh;
@@ -177,8 +185,27 @@ header{
 }
 
 #projects-container h3{
-    grid-row: 1 / 2;
-    grid-column: 1/-1;
+    position: absolute;
+    top: -15px;
+    left: 1vw;
+    font-size: 1rem;
+    /* grid-row: 1 / 2;
+    grid-column: 1/-1; */
 }
 
+.project-card{
+    position: relative;
+    display: grid;
+    grid-template: 1fr min-content / 1fr;
+    gap: 2vh;
+    border: 1px solid green;
+}
 
+.icons-area{
+    display:grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
